@@ -11,18 +11,14 @@
     </h1>
     <!-- http://localhost:8000/?name=RarZar -->
 
-    <!-- First Way -->
     <ul>
     <?php foreach ($students as $student) {
         echo "<li>$student</li>";
     }?>
     </ul>
 
-    <!-- Second Way -->
-    <ul>
-    <?php foreach ($students as $student) : ?>
-        <li><?= $student ?></li>
+    <?php foreach ($works as $key => $value) : ?>
+        <li><?= $key . "-" . $value ?></li>
     <?php endforeach ?>
-    </ul>
 </body>
 </html>
