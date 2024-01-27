@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>
-        <?= "Hello" . htmlspecialchars($_GET["name"]) ?>
-    </h1>
-    <!-- http://localhost:8000/?name=RarZar -->
-</body>
-</html>
+<?php
+
+$name = htmlspecialchars($_GET["name"]);
+
+require('./index.view.php');
