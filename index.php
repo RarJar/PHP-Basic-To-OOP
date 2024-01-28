@@ -1,5 +1,7 @@
 <?php
 
+require("./functions.php");
+
 $name = htmlspecialchars($_GET["name"]);
 
 $students = [
@@ -12,7 +14,6 @@ $works = [
     "complete" => false
 ]; 
 
-// echo "<pre>";
-// var_dump($works);
+dd($works);
 
 require('./index.view.php');
