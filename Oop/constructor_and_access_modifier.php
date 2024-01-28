@@ -5,7 +5,7 @@ class Car{
     public function __construct($carName) {
         $this->carName = $carName;
     }
-    protected function drive(){
+    public function drive(){
         echo $this->carName . "is drive";
     }
 
