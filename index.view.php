@@ -20,5 +20,11 @@
     <?php foreach ($works as $key => $value) : ?>
         <li><?= $key . "-" . $value ?></li>
     <?php endforeach ?>
+
+    <ul>
+        <li><?= $works['title'] ?></li>
+        <li><?= $works['time'] ?></li>
+        <li><?= $works['complete'] ? 'complete' : 'incomplete' ?></li>
+    </ul>
 </body>
 </html>
