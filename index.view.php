@@ -26,5 +26,12 @@
         <li><?= $works['time'] ?></li>
         <li><?= $works['complete'] ? 'complete' : 'incomplete' ?></li>
     </ul>
+
+    <?php if($works['complete']): ?>
+        <h3>Complete</h3>
+    <?php else: ?>
+        <h3>Incomplete</h3>
+    <?php endif; ?>
+
 </body>
 </html>
